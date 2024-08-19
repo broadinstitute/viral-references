@@ -101,7 +101,21 @@
 3052310	Lassa virus Josiah	NC_004297.1:NC_004296.1
 3052310	Lassa virus Pinneo-NIG-1969	KM822127.1:KM822128.1
 619591	Monkeypox virus Zaire-96-I-16	NC_003310.1
-10244	Monkeypox virus MPXV-M5312_HM12_Rivers	MT903340.1
+10244	Monkeypox virus MPXV-M5312_HM12_Rivers	NC_063383.1
+10244	Monkeypox virus COP-58	AY753185.1
+10244	Monkeypox virus Liberia_1970_184	DQ011156.1
+10244	Monkeypox virus USA_2003_039	DQ011157.1
+10244	Monkeypox virus strain_A5_Contig_SPADES	MN702444.1
+10244	Monkeypox virus MPXV_Nigeria_2017_2946	OP535336.1
+10244	Monkeypox virus Ivory Coast 2012	KJ136820.1
+10244	Monkeypox virus Nigeria-SE-1971	KJ642617.1
+10244	Monkeypox virus Yambuku_DRC_1985	KP849471.1
+10244	Monkeypox virus MPXV-M3021_Delta	MT903339.1
+10244	Monkeypox virus MPXV-UK_P2	MT903344.1
+10244	Monkeypox virus MPXV_USA_2022_MA001	ON563414.3
+10244	Monkeypox virus MPXV_USA_2022_FL001	ON674051.1
+10244	Monkeypox virus MPXV_USA_2021_MD	ON676708.1
+10244	Monkeypox virus Monkeypox/PT0033/2022	ON843165.1
 573824	rhinovirus A1	NC_038311.1
 185900	rhinovirus B27	ON311191.1
 1418033	rhinovirus C15	ON311169.1
@@ -307,7 +321,7 @@
 638313	Human bocavirus 3	NC_012564.1
 1511883	Human bocavirus 4 NI	NC_012729.2
 10798	Human parvovirus B19	NC_000883.2
-289365	Human parvovirus 4	KM390024.1 
+289365	Human parvovirus 4	KM390024.1
 2560602	Mumps orthorubulavirus	NC_002200.1
 11234	Measles morbillivirus	NC_001498.1
 11041	Rubella virus	NC_001545.2
