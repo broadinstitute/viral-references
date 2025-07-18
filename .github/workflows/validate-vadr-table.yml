@@ -1,0 +1,36 @@
+name: Validate VADR Table
+
+on:
+  push:
+    paths:
+      - 'annotation/vadr/vadr-by-taxid.tsv'
+  pull_request:
+    paths:
+      - 'annotation/vadr/vadr-by-taxid.tsv'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+        
+    - name: Validate TSV structure
+      run: |
+        python .github/scripts/validate_tsv_structure.py annotation/vadr/vadr-by-taxid.tsv
+        
+    - name: Validate VADR models
+      run: |
+        python .github/scripts/validate_vadr_models.py annotation/vadr/vadr-by-taxid.tsv
