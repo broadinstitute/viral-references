@@ -73,7 +73,7 @@ def check_mkey_files(extract_dir, mkey_value, subdir=None):
         search_dir = base_dir
         print(f"Checking for mkey files in: {search_dir}")
     
-    for ext in ['.fa', '.cm']:
+    for ext in ['.fa', '.minfo']:
         file_path = os.path.join(search_dir, mkey_value + ext)
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"Missing required file: {file_path}")
