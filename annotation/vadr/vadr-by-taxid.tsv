@@ -19,6 +19,7 @@ tax_id	taxon_name	min_seq_len	max_seq_len	vadr_min_ram_gb	vadr_opts	vadr_model_t
 2560525	HPIV-2		18000	24	--mkey hpiv2 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.01.tar.gz	hpiv2
 11216	HPIV-3		18000	24	--mkey hpiv3 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.01.tar.gz	hpiv3
 11224	HPIV-4		18000	24	--mkey hpiv4 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.01.tar.gz	hpiv4
-11234	MeV		18000	24	--mkey mev -r --indefclass 0.01	https://github.com/greninger-lab/vadr-models-mev/archive/refs/tags/v1.0.tar.gz	mev
-2560602	MuV		18000	16	--mkey muv -r --indefclass 0.025	https://github.com/greninger-lab/vadr-models-muv/archive/refs/tags/v1.0.tar.gz	muv
+11234	MeV		18000	24	--mkey mev -r --indefclass 0.01	https://github.com/greninger-lab/vadr-models-mev/archive/refs/tags/v1.02.tar.gz	mev
+2560602	MuV		18000	16	--mkey muv -r --indefclass 0.025	https://github.com/greninger-lab/vadr-models-muv/archive/refs/tags/v1.01.tar.gz	muv
+11041	RuV		10000	16	--mkey ruv -r	https://github.com/greninger-lab/vadr-models-ruv/archive/refs/tags/v1.01.tar.gz	ruv
 208726	HAV		9000		--mkey hav.vadr -r --xnocomp --split	https://github.com/theiagen/VADR_models/archive/refs/tags/v1.0.0.tar.gz	hav
