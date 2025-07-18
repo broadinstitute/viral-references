@@ -5,10 +5,10 @@ tax_id	taxon_name	min_seq_len	max_seq_len	vadr_min_ram_gb	vadr_opts	vadr_model_t
 3052464	Dengue virus		12000	8	--mkey flavi --group Dengue --nomisc --noprotid	https://ftp.ncbi.nlm.nih.gov/pub/nawrocki/vadr-models/flaviviridae/1.2-1/vadr-models-flavi-1.2-1.tar.gz	
 11050	Flaviviridae		14000		--mkey flavi --nomisc --noprotid	https://ftp.ncbi.nlm.nih.gov/pub/nawrocki/vadr-models/flaviviridae/1.2-1/vadr-models-flavi-1.2-1.tar.gz	
 2697049	SARS-CoV-2		32000	8	--mkey sarscov2 --glsearch -s -r --nomisc --lowsim5seq 6 --lowsim3seq 6 --alt_fail lowscore,insertnn,deletinn	https://ftp.ncbi.nlm.nih.gov/pub/nawrocki/vadr-models/sarscov2/1.3-2/vadr-models-sarscov2-1.3-2.tar.gz	
-11137	HCoV-229E		33000		--mkey 229E -s --glsearch -r -f	https://github.com/greninger-lab/vadr-models-hcov/archive/refs/tags/v1.01.tar.gz	229E
-290028	HCoV-HKU1		33000		--mkey HKU1 -s --glsearch -r -f --alt_pass discontn	https://github.com/greninger-lab/vadr-models-hcov/archive/refs/tags/v1.01.tar.gz	HKU1
-277944	HCoV-NL63		33000		--mkey NL63 -s --glsearch -r -f	https://github.com/greninger-lab/vadr-models-hcov/archive/refs/tags/v1.01.tar.gz	NL63
-31631	HCoV-OC43		33000		--mkey OC43 -s --glsearch -r -f --alt_pass discontn	https://github.com/greninger-lab/vadr-models-hcov/archive/refs/tags/v1.01.tar.gz	OC43
+11137	HCoV-229E		33000		--mkey 229E -s --glsearch -r -f	https://github.com/greninger-lab/vadr-models-hcov/archive/refs/tags/v1.02.tar.gz	229E
+290028	HCoV-HKU1		33000		--mkey HKU1 -s --glsearch -r -f --alt_pass discontn	https://github.com/greninger-lab/vadr-models-hcov/archive/refs/tags/v1.02.tar.gz	HKU1
+277944	HCoV-NL63		33000		--mkey NL63 -s --glsearch -r -f	https://github.com/greninger-lab/vadr-models-hcov/archive/refs/tags/v1.02.tar.gz	NL63
+31631	HCoV-OC43		33000		--mkey OC43 -s --glsearch -r -f --alt_pass discontn	https://github.com/greninger-lab/vadr-models-hcov/archive/refs/tags/v1.02.tar.gz	OC43
 11118	Coronaviridae		32000	8	--mkey corona --glsearch -s -r --nomisc --lowsim5seq 6 --lowsim3seq 6 --alt_fail lowscore,insertnn,deletinn	https://ftp.ncbi.nlm.nih.gov/pub/nawrocki/vadr-models/coronaviridae/1.3-3/vadr-models-corona-1.3-3.tar.gz	
 1868215	Orthopneumovirus		16000	16	--mkey rsv --xnocomp -r	https://ftp.ncbi.nlm.nih.gov/pub/nawrocki/vadr-models/rsv/1.5-2/vadr-models-rsv-1.5-2.tar.gz	
 10244	MPXV		230000	32	--mkey mpxv --glsearch --minimap2 -s -r --nomisc --r_lowsimok --r_lowsimxd 100 --r_lowsimxl 2000 --alt_pass discontn,dupregin --s_overhang 150	https://ftp.ncbi.nlm.nih.gov/pub/nawrocki/vadr-models/mpxv/1.4.2-1/vadr-models-mpxv-1.4.2-1.tar.gz	
