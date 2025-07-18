@@ -15,10 +15,10 @@ tax_id	taxon_name	min_seq_len	max_seq_len	vadr_min_ram_gb	vadr_opts	vadr_model_t
 3048148	hMPV		14000	16	--mkey hmpv -r	https://github.com/greninger-lab/vadr-models-hmpv/archive/refs/tags/v1.01.tar.gz	hmpv
 3050292	HHV1		170000	32	--mkey NC_001806.vadr -s --glsearch -r --alt_pass dupregin,discontn,indfstrn,indfstrp --alt_mnf_yes insertnp --r_lowsimok --nmiscftrthr 10 -f --keep	https://github.com/greninger-lab/vadr-models-hsv/archive/refs/tags/v1.0.tar.gz	hsv1
 3050293	HHV2		170000	32	--mkey NC_001798.vadr -s --glsearch -r --alt_pass dupregin,discontn,indfstrn,indfstrp --alt_mnf_yes insertnp --r_lowsimok --nmiscftrthr 10 -f --keep	https://github.com/greninger-lab/vadr-models-hsv/archive/refs/tags/v1.0.tar.gz	hsv2
-12730	HPIV-1		18000	24	--mkey hpiv1 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.0.tar.gz	hpiv1
-2560525	HPIV-2		18000	24	--mkey hpiv2 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.0.tar.gz	hpiv2
-11216	HPIV-3		18000	24	--mkey hpiv3 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.0.tar.gz	hpiv3
-11224	HPIV-4		18000	24	--mkey hpiv4 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.0.tar.gz	hpiv4
+12730	HPIV-1		18000	24	--mkey hpiv1 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.01.tar.gz	hpiv1
+2560525	HPIV-2		18000	24	--mkey hpiv2 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.01.tar.gz	hpiv2
+11216	HPIV-3		18000	24	--mkey hpiv3 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.01.tar.gz	hpiv3
+11224	HPIV-4		18000	24	--mkey hpiv4 -r	https://github.com/greninger-lab/vadr-models-hpiv/archive/refs/tags/v1.01.tar.gz	hpiv4
 11234	MeV		18000	24	--mkey mev -r --indefclass 0.01	https://github.com/greninger-lab/vadr-models-mev/archive/refs/tags/v1.0.tar.gz	mev
 2560602	MuV		18000	16	--mkey muv -r --indefclass 0.025	https://github.com/greninger-lab/vadr-models-muv/archive/refs/tags/v1.0.tar.gz	muv
 208726	HAV		9000		--mkey hav.vadr -r --xnocomp --split	https://github.com/theiagen/VADR_models/archive/refs/tags/v1.0.0.tar.gz	hav
