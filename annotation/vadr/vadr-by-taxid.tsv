@@ -23,4 +23,3 @@ tax_id	taxon_name	min_seq_len	max_seq_len	vadr_min_ram_gb	vadr_opts	vadr_model_t
 2560602	MuV		18000	16	--mkey muv -r --indefclass 0.025	https://github.com/greninger-lab/vadr-models-muv/archive/refs/tags/v1.01.tar.gz	muv
 11041	RuV		10000	16	--mkey ruv -r	https://github.com/greninger-lab/vadr-models-ruv/archive/refs/tags/v1.01.tar.gz	ruv
 208726	HAV		9000		--mkey hav.vadr -r --xnocomp --split	https://github.com/theiagen/VADR_models/archive/refs/tags/v1.0.0.tar.gz	hav
-
