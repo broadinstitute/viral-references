@@ -57,11 +57,21 @@ def check_mkey_files(extract_dir, mkey_value, subdir=None):
     if not mkey_value:
         return  # No mkey specified, nothing to check
     
-    search_dir = extract_dir
-    if subdir:
-        search_dir = os.path.join(extract_dir, subdir)
+    # Find the first (and likely only) subdirectory of extract_dir
+    subdirs = [d for d in os.listdir(extract_dir) if os.path.isdir(os.path.join(extract_dir, d))]
+    if not subdirs:
+        raise FileNotFoundError(f"No subdirectories found in extracted archive")
     
-    print(f"Checking for mkey files in: {search_dir}")
+    # Start with the first subdirectory
+    base_dir = os.path.join(extract_dir, subdirs[0])
+    
+    # If subdir is specified, go one level deeper
+    if subdir:
+        search_dir = os.path.join(base_dir, subdir)
+        print(f"Checking for mkey files in: {search_dir}")
+    else:
+        search_dir = base_dir
+        print(f"Checking for mkey files in: {search_dir}")
     
     for ext in ['.fa', '.cm']:
         file_path = os.path.join(search_dir, mkey_value + ext)
