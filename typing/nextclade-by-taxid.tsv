@@ -9,10 +9,10 @@ tax_id	nextclade_dataset
 208893	rsv_a
 208895	rsv_b
 3048148	hmpv
-11234	nextstrain/measles/N450/WHO-2012
 12637	nextstrain/dengue/all
 10244	MPXV
 619591	hMPXV
 3052505	community/genspectrum/marburg/HK1980/all-lineages
 11089	nextstrain/yellow-fever/prM-E
-11234	nextstrain/measles/N450/WHO-2012
+11234	nextstrain/measles/genome/WHO-2012
+11041	nextstrain/rubella/E1
