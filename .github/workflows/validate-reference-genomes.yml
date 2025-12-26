@@ -1,0 +1,30 @@
+name: Validate Reference Genomes TSV
+
+on:
+  push:
+    paths:
+      - 'assembly/reference_genomes.tsv'
+  pull_request:
+    paths:
+      - 'assembly/reference_genomes.tsv'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Validate TSV structure (4 tab-separated columns)
+      run: |
+        python .github/scripts/validate_reference_genomes_tsv.py assembly/reference_genomes.tsv
