@@ -9,6 +9,9 @@ on:
       - 'assembly/reference_genomes.tsv'
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
