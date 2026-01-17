@@ -48,11 +48,8 @@ jobs:
           GCS_BUCKET: viral-references
           DEPLOY_PATH: ${{ steps.deploy-path.outputs.path }}
         run: |
-          echo "Syncing to gs://$GCS_BUCKET/$DEPLOY_PATH/"
-          gcloud storage rsync . "gs://$GCS_BUCKET/$DEPLOY_PATH/" \
-            --recursive \
-            --delete-unmatched-destination-objects \
-            --exclude=".git*"
+          echo "Deploying to gs://$GCS_BUCKET/$DEPLOY_PATH/"
+          for item in LICENSE README.md assembly annotation typing submission; do gcloud storage cp -r "$item" "gs://$GCS_BUCKET/$DEPLOY_PATH/"; done
           echo "Deployment complete!"
 
       - name: Verify deployment
