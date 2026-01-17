@@ -16,11 +16,11 @@ gs://viral-references/main/submission/table2asn-prohibited.tsv
 ### Versioned Releases
 Pinned versions are available for reproducible workflows:
 ```
-gs://viral-references/v1.0.0/assembly/reference_genomes.tsv
-gs://viral-references/v1.1.0/assembly/reference_genomes.tsv
+gs://viral-references/1.0.0/assembly/reference_genomes.tsv
+gs://viral-references/1.0.1/assembly/reference_genomes.tsv
 ```
 
 ### Deployment
 Data is automatically deployed via GitHub Actions:
 - Every push to `main` updates `gs://viral-references/main/`
-- Version tags (e.g., `v1.0.0`) create immutable snapshots at `gs://viral-references/v1.0.0/`
+- Any tag (e.g., `1.0.0`, `1.0.1`) creates an immutable snapshot at `gs://viral-references/{tag}/`

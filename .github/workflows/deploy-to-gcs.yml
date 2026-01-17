@@ -5,7 +5,7 @@ on:
     branches:
       - main
     tags:
-      - 'v*.*.*'
+      - '*'
 
 permissions:
   contents: write  # Required for updating GitHub releases on tagged deployments
@@ -22,8 +22,8 @@ jobs:
       - name: Determine deployment path
         id: deploy-path
         run: |
-          if [[ "${{ github.ref }}" == refs/tags/v* ]]; then
-            # Extract version from tag (e.g., refs/tags/v1.0.0 -> v1.0.0)
+          if [[ "${{ github.ref }}" == refs/tags/* ]]; then
+            # Extract tag name from ref (e.g., refs/tags/1.0.0 -> 1.0.0)
             VERSION="${GITHUB_REF#refs/tags/}"
             echo "path=$VERSION" >> $GITHUB_OUTPUT
             echo "is_tag=true" >> $GITHUB_OUTPUT
