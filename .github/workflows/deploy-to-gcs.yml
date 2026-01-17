@@ -52,7 +52,7 @@ jobs:
           gcloud storage rsync . "gs://$GCS_BUCKET/$DEPLOY_PATH/" \
             --recursive \
             --delete-unmatched-destination-objects \
-            --exclude=".??*"
+            --exclude=".git*"
           echo "Deployment complete!"
 
       - name: Verify deployment
