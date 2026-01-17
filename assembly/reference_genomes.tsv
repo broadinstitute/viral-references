@@ -1,3 +1,5 @@
+208893	RSV-A	Human respiratory syncytial virus A	NC_001803.1
+11250	RSV-B	Human respiratory syncytial virus B	NC_001781.1
 11137	HCoV-229E	Human coronavirus 229E	NC_002645.1
 290028	HCoV-HKU1	Human coronavirus HKU1	NC_006577.2
 277944	HCoV-NL63	Human coronavirus NL63	NC_005831.2
@@ -23,18 +25,42 @@
 1089607	B	Influenza B virus (B/Wisconsin/01/2010)	CY115189.1:CY115190.1:CY115188.1:CY115183.1:CY115186.1:CY115185.1:CY115184.1:CY115187.1
 11553	C	Influenza C virus (C/Ann Arbor/1/50)	NC_006307.2:NC_006308.2:NC_006309.2:NC_006310.2:NC_006311.1:NC_006312.2:NC_006306.2
 1173138	D	Influenza D virus (D/swine/Oklahoma/1334/2011)	NC_036616.1:NC_036615.1:NC_036619.1:NC_036618.1:NC_036617.1:NC_036620.1:NC_036621.1
-11224	HPIV-4	Human parainfluenza virus 4a	NC_021928.1
-565302	HAdV-B1	Human adenovirus B1	NC_011203.1
-565303	HAdV-B2	Human adenovirus B2	NC_011202.1
+162145	HMPV	Human metapneumovirus A	NC_039199.1
+162145	HMPV	Human metapneumovirus B	PQ634902.1
+12730	HPIV-1	Human respirovirus 1	NC_003461.1
+2560525	HPIV-2	Human orthorubulavirus 2	NC_003443.1
+11216	HPIV-3	Human respirovirus 3	NC_075446.1
+11224	HPIV-4A	Human parainfluenza virus 4a	NC_021928.1
+11226	HPIV-4B	Human parainfluenza virus 4b	PV642257.1
+129875	HAdV-A	Human mastadenovirus A	AC_000005.1
+10528	HAdV-A	Human adenovirus 18	GU191019.1
+10529	HAdV-A	Human adenovirus 31	MG872324.1
+108098	HAdV-B	Human mastadenovirus B	NC_011202.1
+108098	HAdV-B	Human mastadenovirus B	KF633445.1
+108098	HAdV-B	Human mastadenovirus B	NC_011203.1
+10533	HAdV-C	Human adenovirus 1	AC_000017.1
+651580	HAdV-D	Human adenovirus 54	NC_012959.1
+130308	HAdV-E	Human mastadenovirus E	NC_003266.2
+130309	HAdV-F	Human mastadenovirus F	NC_001454.1
+130309	HAdV-F	Human mastadenovirus F	MT791001.1
 10519	HAdV-7	Human adenovirus 7	AC_000018.1
-198503	SAdV-21	simian adenovirus 21	AC_000010.1
-10533	HAdV-1	Human adenovirus 1	AC_000017.1
 536079	HAdV-G	Human mastadenovirus G	NC_006879.1
 28285	HAdV-5	Human adenovirus 5	AC_000008.1
+198503	SAdV-21	simian adenovirus 21	AC_000010.1
 11053	DENV-1	dengue virus type 1	NC_001477.1
 11060	DENV-2	dengue virus type 2	NC_001474.2
 11069	DENV-3	dengue virus type 3	NC_001475.2
 11070	DENV-4	dengue virus type 4	NC_002640.1
+10298	HSV-1	Human herpesvirus type 1	NC_001806.2
+10310	HSV-2	Human alphaherpesvirus 2	NC_001798.2
+10335	VZV	Human alphaherpesvirus 3	NC_001348.1
+10376	EBV	Human herpesvirus 4 type 1	NC_007605.1
+12509	EBV	Human herpesvirus 4 type 2	NC_009334.1
+10359	CMV	Human betaherpesvirus 5	NC_006273.2
+32603	HHV-6	Human betaherpesvirus 6A	NC_001664.4
+32604	HHV-6	Human betaherpesvirus 6B	NC_000898.1
+10372	HHV-7	Human betaherpesvirus 7	NC_001716.2
+37296	HHV-8	Human gammaherpesvirus 8	NC_009333.1
 54290	GBV-C	GB virus C	NC_001710.1
 186538	Ebola virus	Zaire ebolavirus Mbandaka/2020	OR084851.1
 186538	Ebola virus	Zaire ebolavirus Ituri/2018	MK007329.1
@@ -44,8 +70,16 @@
 128952	Ebola virus	Zaire ebolavirus Mayinga/1976	NC_002549.1
 186540	Sudan virus	Sudan ebolavirus 2000/Gulu-808892	NC_006432.1
 186540	Sudan virus	Sudan ebolavirus 1976/Boniface-R4142L	MH121162.1
+565995		Bundibugyo virus	NC_014373.1
+3052225		Henipavirus nipahense	NC_002728.1
+186539		Reston ebolavirus	NC_004161.1
 3052505	MARV	Marburg virus - Musoke, Kenya, 1980	NC_001608.4
+378809		Ravn virus	DQ447649.1
+10255		Variola virus	NC_001611.1
 2169701	ONN	O'nyong'nyong virus	NC_075006.1
+11072		Japanese encephalitis virus	NC_001437.1
+11588		Rift valley fever virus	NC_014397.1:NC_014396.1:NC_014395.1
+3052480		Orthohantavirus hantanense	NC_005222.1:NC_005219.1:NC_005218.1
 3052518	CCHF	Crimean-Congo hemorrhagic fever virus RefSeq	NC_005301.3:NC_005300.2:NC_005302.1
 3052518	CCHF	CCHF Senegal UCCR4416	KY484025.1:KY484026.1:KY484027.1
 3052518	CCHF	CCHF DRC	KY484046.1:KY484047.1:KY484048.1
@@ -87,6 +121,7 @@
 1544901	HCV-7	Hepatitis C virus genotype 7	NC_030791.1
 3087233	ZIKV	Zika virus MR766	NC_012532.1
 64320	ZIKV	Zika virus ZIKV/H sapiens/Brazil/Natal/2015	NC_035889.1
+118655		Oropouche virus	NC_005776.1:NC_005775.1:NC_005777.1
 3052310	LASV	Lassa virus clade II ISTH2376-NIG-2012	KM821997.1:KM821998.1
 3052310	LASV	Lassa virus clade III Nig08-A19	GU481073.1:GU481072.1
 3052310	LASV	Lassa virus clade IV G502-SLE-2009	KM821772.1:KM821773.1
@@ -108,40 +143,34 @@
 10244	MPXV	Monkeypox virus MPXV_USA_2022_FL001	ON674051.1
 10244	MPXV	Monkeypox virus MPXV_USA_2021_MD	ON676708.1
 10244	MPXV	Monkeypox virus Monkeypox/PT0033/2022	ON843165.1
-162145	HMPV	Human metapneumovirus A	NC_039199.1
-162145	HMPV	Human metapneumovirus B	PQ634902.1
-208893	RSV-A	Human respiratory syncytial virus A	NC_001803.1
-11250	RSV-B	Human respiratory syncytial virus B	NC_001781.1
-129875	HAdV-A	Human mastadenovirus A	AC_000005.1
-10528	HAdV-A	Human adenovirus 18	GU191019.1
-10529	HAdV-A	Human adenovirus 31	MG872324.1
-108098	HAdV-B	Human mastadenovirus B	KF633445.1
-651580	HAdV-D	Human adenovirus 54	NC_012959.1
-130308	HAdV-E	Human mastadenovirus E	NC_003266.2
-130309	HAdV-F	Human mastadenovirus F	NC_001454.1
-130309	HAdV-F	Human mastadenovirus F	MT791001.1
-12730	HPIV-1	Human respirovirus 1	NC_003461.1
-2560525	HPIV-2	Human orthorubulavirus 2	NC_003443.1
-11216	HPIV-3	Human respirovirus 3	NC_075446.1
-11226	HPIV-4B	Human parainfluenza virus 4b	PV642257.1
-3052040		Human bocavirus 1	NC_075120.1
-1511882		Human bocavirus 2	NC_012042.1
+689403		Human bocavirus 1	KJ634207.1
+573977		Human bocavirus 2	FJ170280.1
 638313		Human bocavirus 3	NC_012564.1
-1511883		Human bocavirus 4	NC_012729.2
-1391667		Human bufavirus 3	NC_024888.1
+1511883		Human bocavirus 4 NI	NC_012729.2
 10798		Human parvovirus B19	NC_000883.2
-72197		Human erythrovirus V9	NC_004295.1
-1511919		Human parvovirus 4	NC_007018.1
-10298	HSV-1	Human herpesvirus type 1	NC_001806.2
-10310	HSV-2	Human alphaherpesvirus 2	NC_001798.2
-10335	VZV	Human alphaherpesvirus 3	NC_001348.1
-10376	EBV	Human herpesvirus 4 type 1	NC_007605.1
-12509	EBV	Human herpesvirus 4 type 2	NC_009334.1
-10359	CMV	Human betaherpesvirus 5	NC_006273.2
-32603	HHV-6	Human betaherpesvirus 6A	NC_001664.4
-32604	HHV-6	Human betaherpesvirus 6B	NC_000898.1
-10372	HHV-7	Human betaherpesvirus 7	NC_001716.2
-37296	HHV-8	Human gammaherpesvirus 8	NC_009333.1
+289365		Human parvovirus 4	KM390024.1
+2560602		Mumps orthorubulavirus	NC_002200.1
+11234		Measles morbillivirus	NC_001498.1
+11041		Rubella virus	NC_001545.2
+10497		African swine fever virus	NC_044950.1
+10497		African swine fever virus	NC_044951.1
+10497		African swine fever virus	NC_044952.1
+10497		African swine fever virus	NC_044953.1
+10497		African swine fever virus	NC_044954.1
+11292		Lyssavirus rabies	EF206707.1
+11292		Lyssavirus rabies	MG458319.1
+11292		Lyssavirus rabies	JQ685943.1
+11292		Lyssavirus rabies	KX148224.1
+11292		Lyssavirus rabies	KX148223.1
+11292		Lyssavirus rabies	KX148231.1
+11292		Lyssavirus rabies	JQ730682.1
+11292		Lyssavirus rabies	KX148266.1
+11292		Lyssavirus rabies	KX148245.1
+11292		Lyssavirus rabies	JQ685895.1
+11292		Lyssavirus rabies	JQ685952.1
+11292		Lyssavirus rabies	JQ685905.1
+11292		Lyssavirus rabies	JQ685901.1
+11292		Lyssavirus rabies	JQ685968.1
 433732	EV	Echovirus Ams573	EF155423.1
 433731	EV	Echovirus Ams721	EF155422.1
 145390	EV	Echovirus Sp.	OR786176.1
