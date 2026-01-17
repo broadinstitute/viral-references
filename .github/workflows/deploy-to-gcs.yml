@@ -1,0 +1,93 @@
+name: Deploy to Google Cloud Storage
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write  # Required for updating GitHub releases on tagged deployments
+
+jobs:
+  deploy:
+    name: Deploy to GCS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Determine deployment path
+        id: deploy-path
+        run: |
+          if [[ "${{ github.ref }}" == refs/tags/v* ]]; then
+            # Extract version from tag (e.g., refs/tags/v1.0.0 -> v1.0.0)
+            VERSION="${GITHUB_REF#refs/tags/}"
+            echo "path=$VERSION" >> $GITHUB_OUTPUT
+            echo "is_tag=true" >> $GITHUB_OUTPUT
+            echo "Deploying tagged release: $VERSION"
+          else
+            # Main branch deployment
+            echo "path=main" >> $GITHUB_OUTPUT
+            echo "is_tag=false" >> $GITHUB_OUTPUT
+            echo "Deploying main branch"
+          fi
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCS_DEPLOY_SA_KEY }}
+
+      - name: Setup gcloud CLI
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Deploy to GCS
+        env:
+          GCS_BUCKET: viral-references
+          DEPLOY_PATH: ${{ steps.deploy-path.outputs.path }}
+        run: |
+          echo "Syncing to gs://$GCS_BUCKET/$DEPLOY_PATH/"
+          gcloud storage rsync . "gs://$GCS_BUCKET/$DEPLOY_PATH/" \
+            --recursive \
+            --delete-unmatched-destination-objects \
+            --exclude=".??*"
+          echo "Deployment complete!"
+
+      - name: Verify deployment
+        env:
+          GCS_BUCKET: viral-references
+          DEPLOY_PATH: ${{ steps.deploy-path.outputs.path }}
+        run: |
+          echo "Deployed files:"
+          gcloud storage ls -r "gs://$GCS_BUCKET/$DEPLOY_PATH/" | head -20
+          echo ""
+          echo "Deployment URL: gs://$GCS_BUCKET/$DEPLOY_PATH/"
+
+      - name: Update GitHub release notes
+        if: steps.deploy-path.outputs.is_tag == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG_NAME: ${{ github.ref_name }}
+          GCS_BUCKET: viral-references
+          DEPLOY_PATH: ${{ steps.deploy-path.outputs.path }}
+        run: |
+          # Check if release exists for this tag
+          if gh release view "$TAG_NAME" &>/dev/null; then
+            echo "Release exists for $TAG_NAME, updating with deployment URL"
+
+            # Get existing release notes
+            EXISTING_NOTES=$(gh release view "$TAG_NAME" --json body --jq .body)
+
+            # Append deployment info if not already present
+            if [[ "$EXISTING_NOTES" != *"gs://$GCS_BUCKET/$DEPLOY_PATH/"* ]]; then
+              DEPLOYMENT_NOTE="\n\n---\n\n**Deployment**: Available at \`gs://$GCS_BUCKET/$DEPLOY_PATH/\`"
+              gh release edit "$TAG_NAME" --notes "${EXISTING_NOTES}${DEPLOYMENT_NOTE}"
+              echo "Release notes updated with deployment URL"
+            else
+              echo "Deployment URL already present in release notes"
+            fi
+          else
+            echo "No release found for $TAG_NAME, skipping release update"
+          fi
