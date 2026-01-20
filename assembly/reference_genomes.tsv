@@ -1,5 +1,5 @@
 208893	RSV-A	Human respiratory syncytial virus A	NC_001803.1
-11250	RSV-B	Human respiratory syncytial virus B	NC_001781.1
+208895	RSV-B	Human respiratory syncytial virus B	NC_001781.1
 11137	HCoV-229E	Human coronavirus 229E	NC_002645.1
 290028	HCoV-HKU1	Human coronavirus HKU1	NC_006577.2
 277944	HCoV-NL63	Human coronavirus NL63	NC_005831.2
@@ -139,14 +139,14 @@
 10244	MPXV	Monkeypox virus MPXV_USA_2022_FL001	ON674051.1
 10244	MPXV	Monkeypox virus MPXV_USA_2021_MD	ON676708.1
 10244	MPXV	Monkeypox virus Monkeypox/PT0033/2022	ON843165.1
-3052040		Human bocavirus 1	NC_075120.1
-1511882		Human bocavirus 2	NC_012042.1
+689403		Human bocavirus 1	NC_075120.1
+573977		Human bocavirus 2	NC_012042.1
 638313		Human bocavirus 3	NC_012564.1
 1511883		Human bocavirus 4	NC_012729.2
 1391667		Human bufavirus 3	NC_024888.1
 10798		Human parvovirus B19	NC_000883.2
 72197		Human erythrovirus V9	NC_004295.1
-1511919		Human parvovirus 4	NC_007018.1
+289365		Human parvovirus 4	NC_007018.1
 2560602		Mumps orthorubulavirus	NC_002200.1
 11234		Measles morbillivirus	NC_001498.1
 11234		Measles morbillivirus D8	PV870339.1
