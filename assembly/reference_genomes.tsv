@@ -139,12 +139,14 @@
 10244	MPXV	Monkeypox virus MPXV_USA_2022_FL001	ON674051.1
 10244	MPXV	Monkeypox virus MPXV_USA_2021_MD	ON676708.1
 10244	MPXV	Monkeypox virus Monkeypox/PT0033/2022	ON843165.1
-689403		Human bocavirus 1	KJ634207.1
-573977		Human bocavirus 2	FJ170280.1
-638313		Human bocavirus 3	NC_012564.1
-1511883		Human bocavirus 4 NI	NC_012729.2
-10798		Human parvovirus B19	NC_000883.2
-289365		Human parvovirus 4	KM390024.1
+3052040         Human bocavirus 1       NC_075120.1
+1511882         Human bocavirus 2       NC_012042.1
+638313          Human bocavirus 3       NC_012564.1
+1511883         Human bocavirus 4       NC_012729.2
+1391667         Human bufavirus 3       NC_024888.1
+10798           Human parvovirus B19    NC_000883.2
+72197           Human erythrovirus V9   NC_004295.1
+1511919         Human parvovirus 4      NC_007018.1
 2560602		Mumps orthorubulavirus	NC_002200.1
 11234		Measles morbillivirus	NC_001498.1
 11234		Measles morbillivirus D8	PV870339.1
