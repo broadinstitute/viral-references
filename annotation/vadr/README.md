@@ -14,8 +14,9 @@ in column 1, you can use the information in that row to run VADR--however,
 if your taxon of interest matches more than one row, use the earliest match.
 In other words: when adding new rows to this table, if your new taxid
 falls under or over any existing rows, put the most specific taxid earlier
-in the table. The two examples currently in this data include
-Dengue before Flaviviridae and SARS-CoV-2 before Coronaviridae.
+in the table. Examples currently in this data include Dengue before
+Flaviviridae, Norovirus before Caliciviridae, and SARS-CoV-2 and the
+four seasonal HCoV species before Coronaviridae.
 
 ## Columns
 
