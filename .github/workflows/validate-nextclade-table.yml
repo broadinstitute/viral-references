@@ -1,0 +1,39 @@
+name: Validate Nextclade Table
+
+on:
+  push:
+    paths:
+      - 'typing/nextclade-by-taxid.tsv'
+      - '.github/workflows/validate-nextclade-table.yml'
+      - '.github/scripts/validate_nextclade_table.py'
+  pull_request:
+    paths:
+      - 'typing/nextclade-by-taxid.tsv'
+      - '.github/workflows/validate-nextclade-table.yml'
+      - '.github/scripts/validate_nextclade_table.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Validate nextclade table
+      run: |
+        python .github/scripts/validate_nextclade_table.py typing/nextclade-by-taxid.tsv
